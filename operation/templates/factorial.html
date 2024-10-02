@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>FACTORIAL<h1>
+        <form method="post">
+            {%csrf_token%}
+            <label>Enter a number</label>
+            <input type="text" name="factorialBox">
+            <button type="submit">factorial</button>
+            Result:{{fact}}
+</body>
+</html>

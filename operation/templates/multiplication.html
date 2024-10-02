@@ -1,0 +1,27 @@
+{%extends "base.html"%}
+{%block title_block%}
+<title>MULTIPLICATION</title>
+{%endblock%}
+{%block main_block%}
+<div class="container">
+    
+    <div class="row mt-5">
+        <div class="col-3">
+        </div>
+<div class="col-6 bg-light border border-3 shadow p-3">
+    <h1 align="center">MULTIPLICATION</h1>
+        <form method="post">
+            {%csrf_token%}
+            <label>Enter number1</label>
+            <input type="text" name="box1" class="form-control">
+            <label>Enter number2</label>
+            <input type="text" name="box2" class="form-control">
+            <br>
+                    <div class="text-center">
+            <button type="submit" class="btn btn-success">MULTIPLY</button><br>
+            <br>
+            <b>RESULT:{{result}}</b>
+        </div>
+    </form>
+    </div>
+{%endblock%}
